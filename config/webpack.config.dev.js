@@ -66,11 +66,6 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
         ],
       },
     },
-    {
-      test: /\.scss$/,
-      include: paths.appSrc,
-      loaders: ["style", "css", "sass"]
-    },
   ];
   if (preProcessor) {
     loaders.push(require.resolve(preProcessor));
@@ -213,6 +208,14 @@ module.exports = {
               limit: 10000,
               name: 'static/media/[name].[hash:8].[ext]',
             },
+          },
+          {
+            test: /\.scss$/,
+            loaders: [
+              require.resolve('style-loader'),
+              require.resolve('css-loader'),
+              require.resolve('sass-loader')
+            ]
           },
           // Process application JS with Babel.
           // The preset includes JSX, Flow, and some ESnext features.
