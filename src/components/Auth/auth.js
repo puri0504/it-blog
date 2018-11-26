@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="auth">
-        <h2>Авторизуйтесь через соцсети</h2>
+        <h2 className='title'>Авторизуйтесь через соцсети</h2>
         <div className='auth-social-btn'></div>
       </div>
     );
