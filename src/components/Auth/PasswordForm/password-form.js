@@ -3,13 +3,19 @@ import React, { Component } from 'react';
 class PasswordForm extends Component {
     render() {
         return (
-            <form>
-                <input type="text" className='input'/>
-                <div className='btn-wrap'>
-                    <a href="/" className='link-btn'>К авторизации</a>
-                    <button className='btn'>Далее</button>
+            <div className="auth">
+                <div className="container">
+                    <div className='auth-mail'>
+                        <form>
+                            <input type="text" className='input' placeholder='Пароль'/>
+                            <div className='btn-wrap'>
+                                <a href="/login" className='link-btn'>К авторизации</a>
+                                <button className='btn'>Войти</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
+            </div>
         );
     }
 }
