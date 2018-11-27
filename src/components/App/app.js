@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Auth from '../Auth';
-import './app.css';
 import 'normalize.css';
 
 class App extends Component {

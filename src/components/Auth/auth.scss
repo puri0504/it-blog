@@ -1,13 +1,52 @@
 .auth {
   background: #fff;
   width: 500px;
-  height: 200px;
   box-shadow: 0 0 18px 0 rgba(78,156,208,.63);
   border-radius: 4px;
   margin: 100px auto 0;
+  .container {
+    width: 280px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
   .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    padding-top: 20px;
+  }
+  .auth-social {
+    .icons {
+      margin-top: 30px;
+    }
+    .icon {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      margin-right: 30px;
+      :last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .auth-mail {
+    margin-top: 50px;
+    form {
+      text-align: left;
+    }
+    .input {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+    }
+    .reset-link {
+      font-size: 13px;
+      margin-top: 7px;
+      display: block;
+    }
+    .btn-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      align-items: center;
+    }
   }
 }
