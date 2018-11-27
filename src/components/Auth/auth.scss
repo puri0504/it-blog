@@ -35,10 +35,10 @@
     .input {
       display: block;
       margin-top: 20px;
-      width: 100%;
+      width: calc(100% - 20px);
     }
     .reset-link {
-      font-size: 13px;
+      font-size: 12px;
       margin-top: 7px;
       display: block;
     }
@@ -47,6 +47,11 @@
       justify-content: space-between;
       margin-top: 20px;
       align-items: center;
+      .btn {
+        background: #e2e6ea;
+        color: #212529;
+        border-color: #dae0e5;
+      }
     }
   }
 }

@@ -18,13 +18,13 @@ class App extends Component {
             <div className='icons'>{icons}</div>
           </div>
           <div className='auth-mail'>
-            <h2 className='title'>Или используйте email</h2>
+            <h2 className='title'>Войдите с помощью email</h2>
             <form>
               <input type="text" className='input' placeholder='Email'/>
-              <a href="/" className='link reset-link'>Забыли email?</a>
+              <a href="/" className='link reset-link'>Забыли email</a>
               <div className='btn-wrap'>
                 <a href="/" className='link-btn'>Регистрация</a>
-                <button className='submit-btn'>Войти</button>
+                <button className='btn'>Далее</button>
               </div>
             </form>
           </div>
